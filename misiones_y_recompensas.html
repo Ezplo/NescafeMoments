@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Misiones y Recompensas | Nescafé</title>
+</head>
+<body>
+    <!-- =====================================
+         HERO Y HEADER
+    ====================================== -->
+    <section class="hero recipes-hero missions-hero">
+        <img src="img/headers/misiones.png" alt="" class="hero-background" aria-hidden="true">
+
+        <header class="site-header">
+            <div class="header-top container">
+                <a href="index.html" class="brand">
+                    <img src="img/logo-blanco.png" width="150" alt="Logo Nescafé">
+                </a>
+
+                <form class="search-form" role="search">
+                    <label for="site-search" class="sr-only">Buscar</label>
+                    <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="10.8" cy="10.8" r="6.4"></circle>
+                        <path d="m16 16 4.2 4.2"></path>
+                    </svg>
+                    <input id="site-search" type="search" placeholder="Buscar recetas, ingredientes...">
+                    <button type="reset" class="search-clear" aria-label="Limpiar búsqueda"></button>
+                </form>
+
+                <div class="header-actions">
+                    <button class="icon-button" type="button" aria-label="Notificaciones">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+                            <path d="M10 21h4"></path>
+                        </svg>
+                    </button>
+                    <a href="perfil.html" class="user-menu">
+                        <span class="user-avatar">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4"></circle>
+                                <path d="M4 21c.7-4.2 3.5-6.3 8-6.3s7.3 2.1 8 6.3"></path>
+                            </svg>
+                        </span>
+                        <span class="user-name">Nombre</span>
+                        <span class="chevron" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="main-nav container" aria-label="Navegación principal">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="recetas.html" class="nav-link">Recetas</a>
+                <a href="misiones_y_recompensas.html" class="nav-link is-active" aria-current="page">Misiones y Recompensas</a>
+                <a href="guardados.html" class="nav-link">Guardados</a>
+                <a href="productos.html" class="nav-link">Productos</a>
+            </nav>
+        </header>
+
+        <div class="recipes-hero-title missions-hero-title">
+            <h1>Tu progreso</h1>
+        </div>
+    </section>
+
+    <!-- =====================================
+         CONTENIDO: PROGRESO, MISIONES E INSIGNIAS
+    ====================================== -->
+    <main class="missions-page container">
+        <section class="user-progress-card" aria-label="Progreso del usuario">
+            <div class="user-progress-avatar" aria-hidden="true">
+                <svg viewBox="0 0 100 100">
+                    <circle cx="50" cy="34" r="17"></circle>
+                    <path d="M15 88c3-21 16-32 35-32s32 11 35 32c-9 7-21 11-35 11s-26-4-35-11Z"></path>
+                </svg>
+            </div>
+            <div class="user-progress-info">
+                <h2>Nombre</h2>
+                <p class="user-level">Nivel 8</p>
+                <div class="experience-track" role="progressbar" aria-label="Experiencia acumulada" aria-valuemin="0" aria-valuemax="8000" aria-valuenow="6500">
+                    <span style="width: 81.25%"></span>
+                </div>
+                <p class="experience-label">6500/8000 xp</p>
+            </div>
+            <a href="perfil.html" class="outline-button">Ver mi perfil</a>
+        </section>
+
+        <section class="missions-section" id="misiones-diarias">
+            <h2 class="missions-section-title">Tus misiones</h2>
+            <div class="mission-tabs" aria-label="Categorías de misiones">
+                <span class="mission-tab is-selected" aria-current="page">Diarias</span>
+                <span class="mission-tab">Semanales</span>
+                <span class="mission-tab">Permanentes</span>
+                <span class="mission-tab">Temporada</span>
+            </div>
+
+            <div class="mission-heading-row">
+                <h3>Misiones diarias</h3>
+                <p>Se reinician en <strong>12:45:18</strong></p>
+            </div>
+
+            <div class="mission-list mission-list-featured">
+                <article class="mission-card">
+                    <span class="mission-card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 48 48"><path d="M12 29a8 8 0 0 1 1-15 11 11 0 0 1 21 3 7 7 0 0 1 1 14H12Z"></path><path d="M14 35h20M17 39h14"></path></svg>
+                    </span>
+                    <div class="mission-card-content">
+                        <h4>Prueba una receta diferente</h4>
+                        <p>0/1</p>
+                        <div class="mission-progress"><span style="width: 2%"></span></div>
+                    </div>
+                    <strong class="mission-reward">XP 500</strong>
+                </article>
+
+                <article class="mission-card">
+                    <span class="mission-card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 48 48"><path d="M12 29a8 8 0 0 1 1-15 11 11 0 0 1 21 3 7 7 0 0 1 1 14H12Z"></path><path d="M14 35h20M17 39h14"></path></svg>
+                    </span>
+                    <div class="mission-card-content">
+                        <h4>Explora 5 recetas nuevas</h4>
+                        <p>3/5</p>
+                        <div class="mission-progress"><span style="width: 60%"></span></div>
+                    </div>
+                    <strong class="mission-reward">XP 70</strong>
+                </article>
+
+                <article class="mission-card">
+                    <span class="mission-card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 48 48"><path d="M12 29a8 8 0 0 1 1-15 11 11 0 0 1 21 3 7 7 0 0 1 1 14H12Z"></path><path d="M14 35h20M17 39h14"></path></svg>
+                    </span>
+                    <div class="mission-card-content">
+                        <h4>Prepara 3 cafés</h4>
+                        <p>2/3</p>
+                        <div class="mission-progress"><span style="width: 66.67%"></span></div>
+                    </div>
+                    <strong class="mission-reward">XP 100</strong>
+                </article>
+
+                <article class="mission-card is-completed">
+                    <span class="mission-card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 48 48"><circle cx="21" cy="21" r="13"></circle><path d="m31 31 10 10"></path></svg>
+                    </span>
+                    <div class="mission-card-content">
+                        <h4>Prepara 1 café frío</h4>
+                        <p>1/1</p>
+                        <div class="mission-progress"><span style="width: 100%"></span></div>
+                    </div>
+                    <span class="mission-status-icon" aria-label="Misión completada">
+                        <svg viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"></path></svg>
+                    </span>
+                </article>
+            </div>
+
+            <a class="section-more-link" href="#misiones-semanales">Ver todas las misiones</a>
+        </section>
+
+        <section class="badges-section" id="insignias">
+            <h2 class="missions-section-title">Tus insignias</h2>
+            <div class="badge-list">
+                <article class="badge-card badge-card-unlocked">
+                    <div class="badge-level badge-level-gold"><span>Nivel</span><strong>5</strong></div>
+                    <img class="badge-art" src="img/insignias/i_1.png" alt="Insignia Amante de los clásico">
+                    <div class="badge-info"><h3>Amante de los clásico</h3><p>Desbloqueado</p></div>
+                    <p class="badge-condition">Desbloqueado el<br>15 May 2026</p>
+                    <span class="badge-status-icon" aria-label="Insignia desbloqueada"><svg viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"></path></svg></span>
+                </article>
+
+                <article class="badge-card badge-card-unlocked">
+                    <div class="badge-level badge-level-gold"><span>Nivel</span><strong>8</strong></div>
+                    <img class="badge-art" src="img/insignias/i_2.png" alt="Insignia Fan de lo caliente">
+                    <div class="badge-info"><h3>Fan de lo caliente</h3><p>Desbloqueado</p></div>
+                    <p class="badge-condition">Desbloqueado el<br>15 May 2026</p>
+                    <span class="badge-status-icon" aria-label="Insignia desbloqueada"><svg viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"></path></svg></span>
+                </article>
+
+                <article class="badge-card badge-card-locked">
+                    <div class="badge-level badge-level-teal"><span>Nivel</span><strong>10</strong></div>
+                    <img class="badge-art" src="img/insignias/ib_1.png" alt="Insignia Barista en Formación">
+                    <div class="badge-info"><h3>Barista en Formación</h3><p class="badge-percentage">80%</p><div class="badge-progress"><span style="width: 80%"></span></div></div>
+                    <p class="badge-condition">Alcanza el nivel 10<br>para desbloquear</p>
+                    <span class="badge-lock-icon" aria-label="Insignia bloqueada"><svg viewBox="0 0 40 40"><rect x="6" y="17" width="28" height="20" rx="3"></rect><path d="M12 17v-5a8 8 0 0 1 16 0v5"></path><circle cx="20" cy="26" r="2"></circle><path d="M20 28v4"></path></svg></span>
+                </article>
+
+                <article class="badge-card badge-card-locked">
+                    <div class="badge-level badge-level-teal"><span>Nivel</span><strong>13</strong></div>
+                    <img class="badge-art" src="img/insignias/ib_1.png" alt="Insignia Entusiasta del Café">
+                    <div class="badge-info"><h3>Entusiasta del Café</h3><p class="badge-percentage">62%</p><div class="badge-progress"><span style="width: 62%"></span></div></div>
+                    <p class="badge-condition">Alcanza el nivel 13<br>para desbloquear</p>
+                    <span class="badge-lock-icon" aria-label="Insignia bloqueada"><svg viewBox="0 0 40 40"><rect x="6" y="17" width="28" height="20" rx="3"></rect><path d="M12 17v-5a8 8 0 0 1 16 0v5"></path><circle cx="20" cy="26" r="2"></circle><path d="M20 28v4"></path></svg></span>
+                </article>
+
+                <article class="badge-card badge-card-locked">
+                    <div class="badge-level badge-level-teal"><span>Nivel</span><strong>15</strong></div>
+                    <img class="badge-art" src="img/insignias/ib_1.png" alt="Insignia Experto Cafetero">
+                    <div class="badge-info"><h3>Experto Cafetero</h3><p class="badge-percentage">53%</p><div class="badge-progress"><span style="width: 53%"></span></div></div>
+                    <p class="badge-condition">Alcanza el nivel 15<br>para desbloquear</p>
+                    <span class="badge-lock-icon" aria-label="Insignia bloqueada"><svg viewBox="0 0 40 40"><rect x="6" y="17" width="28" height="20" rx="3"></rect><path d="M12 17v-5a8 8 0 0 1 16 0v5"></path><circle cx="20" cy="26" r="2"></circle><path d="M20 28v4"></path></svg></span>
+                </article>
+            </div>
+            <a class="section-more-link" href="#insignias">Ver todas las insignias</a>
+        </section>
+    </main>
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+    <footer class="site-footer">
+        <div class="footer-inner container">
+            <div class="footer-brand-column">
+                <a href="index.html" class="brand footer-brand"><img src="img/logo-blanco.png" width="150" alt="Logo Nescafé"></a>
+                <p>Ideas, recetas y momentos para hacer<br>de cada día algo especial.</p>
+                <img src="img/Footer-cafe.png" class="footer-coffee-beans" alt="" aria-hidden="true">
+            </div>
+            <div class="footer-column">
+                <h2>NAVEGACIÓN</h2>
+                <a href="index.html">Inicio</a><a href="recetas.html">Explorar recetas</a><a href="misiones_y_recompensas.html">Misiones</a><a href="guardados.html">Guardados</a><a href="productos.html">Productos</a>
+            </div>
+            <div class="footer-column">
+                <h2>AYUDA</h2>
+                <a href="#">FAQ</a><a href="#">Centro de ayuda</a><a href="#">Contacto / Soporte</a><a href="#">Términos y condiciones</a><a href="#">Aviso de privacidad</a>
+            </div>
+            <div class="footer-column">
+                <h2>SOBRE NOSOTROS</h2>
+                <a href="#">Sobre NESCAFÉ</a><a href="#">Sustentabilidad</a><a href="#">Nuestra historia</a><a href="#">Trabaja con nosotros</a>
+            </div>
+            <div class="footer-bottom"><p>© 2026 NESCAFÉ. Todos los derechos reservados.</p><span>México (MX)</span></div>
+        </div>
+    </footer>
+</body>
+</html>

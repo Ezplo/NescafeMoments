@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Nescafé Moments</title>
+</head>
+<body>
+
+    <!-- HERO Y HEADER -->
+    <section class="hero hero-home">
+
+        <!-- IMAGEN DEL HERO: SE CAMBIA DESDE AQUÍ -->
+        <img
+            src="img/headers/home.png"
+            alt=""
+            class="hero-background"
+            aria-hidden="true"
+        >
+
+        <header class="site-header">
+
+            <div class="header-top container">
+
+                <a href="index.html" class="brand">
+                    <img src="img/logo-blanco.png" width="150" alt="Logo Nescafé">
+                </a>
+
+                <form class="search-form" role="search">
+                    <label for="site-search" class="sr-only">Buscar recetas</label>
+
+                    <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="10.8" cy="10.8" r="6.4"></circle>
+                        <path d="m16 16 4.2 4.2"></path>
+                    </svg>
+
+                    <input
+                        id="site-search"
+                        type="search"
+                        placeholder="Buscar recetas, ingredientes..."
+                    >
+
+                    <button type="reset" class="search-clear" aria-label="Limpiar búsqueda"></button>
+                </form>
+
+                <div class="header-actions">
+
+                    <button class="icon-button" type="button" aria-label="Notificaciones">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+                            <path d="M10 21h4"></path>
+                        </svg>
+                    </button>
+
+                    <a href="perfil.html" class="user-menu">
+
+                        <span class="user-avatar">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4"></circle>
+                                <path d="M4 21c.7-4.2 3.5-6.3 8-6.3s7.3 2.1 8 6.3"></path>
+                            </svg>
+                        </span>
+
+                        <span class="user-name">Nombre</span>
+                        <span class="chevron" aria-hidden="true"></span>
+
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- NAVEGACIÓN -->
+            <nav class="main-nav container" aria-label="Navegación principal">
+                <a href="index.html" class="nav-link is-active" aria-current="page">Inicio</a>
+                <a href="recetas.html" class="nav-link">Recetas</a>
+                <a href="misiones_y_recompensas.html" class="nav-link">Misiones y Recompensas</a>
+                <a href="guardados.html" class="nav-link">Guardados</a>
+                <a href="productos.html" class="nav-link">Productos</a>
+            </nav>
+
+        </header>
+
+        <!-- CONTENIDO HERO -->
+        <div class="hero-content container">
+            <div class="hero-copy">
+
+                <h1>
+                    Descubre nuevas<br class="desktop-break">
+                    formas de disfrutar<br class="desktop-break">
+                    tu café
+                </h1>
+
+                <p>
+                    Explora recetas, completa misiones y<br class="desktop-break">
+                    encuentra momentos que hagan tu día mejor
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="recetas.html" class="button button-primary">
+                        Explorar recetas
+                    </a>
+
+                    <a href="misiones_y_recompensas.html" class="button button-light">
+                        Ver misiones
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="page-content container">
+
+        <!-- RECETAS -->
+        <section class="panel recipes-panel">
+
+            <div class="section-heading">
+                <h2>Recetas para este momento</h2>
+                <a href="recetas.html" class="text-link heading-link">
+                    Ver todas →
+                </a>
+            </div>
+
+            <div class="recipe-grid">
+
+                <!-- RECETA 1 -->
+                <article class="content-card recipe-card">
+                    <div class="card-image-wrap">
+                        <img src="img/recetas/cafe-frio-de-vainilla.png"
+                            alt="Café frío con vainilla y crema batida">
+
+                        <button class="bookmark-button is-saved"
+                            type="button" aria-label="Quitar de guardados" aria-pressed="true">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M6 3.5h12v17l-6-4-6 4z"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="card-body">
+                        <h3>Café frío con Vainilla</h3>
+                        <p class="card-meta"><span class="meta-icon">☆</span> 5.0</p>
+                        <p class="card-meta"><span class="meta-icon">◷</span> 6 min</p>
+                        <a href="recetas.html" class="text-link card-link">Ver receta →</a>
+                    </div>
+                </article>
+
+                <!-- RECETA 2 -->
+                <article class="content-card recipe-card">
+                    <div class="card-image-wrap">
+                        <img src="img/recetas/dirty-latte.png"
+                            alt="Dirty chai latte en una taza de vidrio">
+
+                        <button class="bookmark-button" type="button"
+                            aria-label="Guardar Dirty Chai Latte" aria-pressed="false">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M6 3.5h12v17l-6-4-6 4z"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="card-body">
+                        <h3>Dirty Chai Latte</h3>
+                        <p class="card-meta"><span class="meta-icon">☆</span> 4.5</p>
+                        <p class="card-meta"><span class="meta-icon">◷</span> 5 min</p>
+                        <a href="recetas.html" class="text-link card-link">Ver receta →</a>
+                    </div>
+                </article>
+
+                <!-- RECETA 3 -->
+                <article class="content-card recipe-card">
+                    <div class="card-image-wrap">
+                        <img src="img/recetas/macciato-chocolate-blanco.png"
+                            alt="Macchiato de chocolate blanco">
+
+                        <button class="bookmark-button" type="button"
+                            aria-label="Guardar Macchiato de chocolate blanco" aria-pressed="false">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M6 3.5h12v17l-6-4-6 4z"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="card-body">
+                        <h3>Macchiato de<br> chocolate blanco</h3>
+                        <p class="card-meta"><span class="meta-icon">☆</span> 4.9</p>
+                        <p class="card-meta"><span class="meta-icon">◷</span> 10 min</p>
+                        <a href="recetas.html" class="text-link card-link">Ver receta →</a>
+                    </div>
+                </article>
+
+                <!-- RECETA 4 -->
+                <article class="content-card recipe-card">
+                    <div class="card-image-wrap">
+                        <img src="img/recetas/latte-caffe-matcha.png"
+                            alt="Latte de café y matcha">
+
+                        <button class="bookmark-button" type="button"
+                            aria-label="Guardar Latte de café y matcha" aria-pressed="false">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M6 3.5h12v17l-6-4-6 4z"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="card-body">
+                        <h3>Latte de café y<br> matcha</h3>
+                        <p class="card-meta"><span class="meta-icon">☆</span> 5.0</p>
+                        <p class="card-meta"><span class="meta-icon">◷</span> 10 min</p>
+                        <a href="recetas.html" class="text-link card-link">Ver receta →</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- MISIONES Y PROGRESO -->
+        <div class="dashboard-grid">
+
+            <!-- MISIONES -->
+            <section class="panel dashboard-panel">
+                <h2>Tu próxima misión te espera</h2>
+
+                <div class="mission-list">
+
+                    <article class="mission-item">
+                        <span class="mission-icon">
+                            <svg viewBox="0 0 48 48" aria-hidden="true">
+                                <path d="M12 29a8 8 0 0 1 1-15 11 11 0 0 1 21 3 7 7 0 0 1 1 14H12Z"></path>
+                                <path d="M14 35h20M17 39h14"></path>
+                            </svg>
+                        </span>
+
+                        <div class="mission-copy">
+                            <h3>Prepara 1 café frío</h3>
+                            <p>0/1</p>
+                        </div>
+
+                        <strong class="xp-value">XP 100</strong>
+                    </article>
+
+                    <article class="mission-item">
+                        <span class="mission-icon">
+                            <svg viewBox="0 0 48 48" aria-hidden="true">
+                                <path d="M12 29a8 8 0 0 1 1-15 11 11 0 0 1 21 3 7 7 0 0 1 1 14H12Z"></path>
+                                <path d="M14 35h20M17 39h14"></path>
+                            </svg>
+                        </span>
+
+                        <div class="mission-copy">
+                            <h3>Completa 5 recetas esta semana</h3>
+                            <p>2/5</p>
+                        </div>
+
+                        <strong class="xp-value">XP 500</strong>
+                    </article>
+
+                    <article class="mission-item">
+                        <span class="mission-icon">
+                            <svg viewBox="0 0 48 48" aria-hidden="true">
+                                <path d="M12 29a8 8 0 0 1 1-15 11 11 0 0 1 21 3 7 7 0 0 1 1 14H12Z"></path>
+                                <path d="M14 35h20M17 39h14"></path>
+                            </svg>
+                        </span>
+
+                        <div class="mission-copy">
+                            <h3>Crea tu primera receta</h3>
+                            <p>0/1</p>
+                        </div>
+
+                        <strong class="xp-value">XP 150</strong>
+                    </article>
+
+                </div>
+
+                <a href="misiones_y_recompensas.html" class="text-link panel-bottom-link">
+                    Ver todas las misiones
+                </a>
+            </section>
+
+
+            <!-- PROGRESO -->
+            <section class="panel dashboard-panel progress-panel">
+                <h2>Tu progreso</h2>
+
+                <div class="profile-progress-card">
+
+                    <div class="progress-user-icon">
+                        <svg viewBox="0 0 64 64" aria-hidden="true">
+                            <circle cx="32" cy="21" r="11"></circle>
+                            <path d="M10 56c2-12 10-18 22-18s20 6 22 18c-6 5-14 8-22 8s-16-3-22-8Z"></path>
+                        </svg>
+                    </div>
+
+                    <h3>Nombre</h3>
+
+                    <div class="level-block">
+                        <strong>Nivel 8</strong>
+
+                        <div class="progress-track" role="progressbar"
+                            aria-label="Progreso de experiencia"
+                            aria-valuemin="0" aria-valuemax="8000"
+                            aria-valuenow="6500">
+                            <span></span>
+                        </div>
+
+                        <p>6500/8000 xp</p>
+                    </div>
+
+                    <a href="perfil.html" class="text-link panel-bottom-link">
+                        Ver mi perfil
+                    </a>
+
+                </div>
+            </section>
+
+        </div>
+
+
+        <!-- PRODUCTOS -->
+        <section class="panel products-panel">
+
+            <div class="section-heading">
+                <h2>Conoce nuestros productos</h2>
+                <a href="productos.html" class="text-link heading-link">Ver todas →</a>
+            </div>
+
+            <div class="product-grid">
+
+                <article class="content-card product-card">
+                    <div class="product-image-wrap">
+                        <img src="img/productos/clasico.png"
+                            alt="Producto NESCAFÉ Clásico">
+                    </div>
+                    <div class="product-card-body">
+                        <h3>NESCAFÉ Clásico</h3>
+                        <a href="productos.html" class="text-link">Ver producto →</a>
+                    </div>
+                </article>
+
+                <article class="content-card product-card">
+                    <div class="product-image-wrap">
+                        <img src="img/productos/decaf.png"
+                            alt="Producto NESCAFÉ Decaf">
+                    </div>
+                    <div class="product-card-body">
+                        <h3>NESCAFÉ Decaf</h3>
+                        <a href="productos.html" class="text-link">Ver producto →</a>
+                    </div>
+                </article>
+
+                <article class="content-card product-card">
+                    <div class="product-image-wrap">
+                        <img src="img/productos/clasico-chocolate.png"
+                            alt="Producto NESCAFÉ Clásico Aroma a Chocolate">
+                    </div>
+                    <div class="product-card-body">
+                        <h3>Nescafé Clásico<br> Aroma a Chocolate</h3>
+                        <a href="productos.html" class="text-link">Ver producto →</a>
+                    </div>
+                </article>
+
+                <article class="content-card product-card">
+                    <div class="product-image-wrap">
+                        <img src="img/productos/ice.png"
+                            alt="Producto NESCAFÉ Ice">
+                    </div>
+                    <div class="product-card-body">
+                        <h3>NESCAFÉ Ice</h3>
+                        <a href="productos.html" class="text-link">Ver producto →</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="footer-inner container">
+
+            <div class="footer-brand-column">
+                <a href="index.html" class="brand footer-brand">
+                    <img src="img/logo-blanco.png" width="150" alt="Logo Nescafé">
+                </a>
+
+                <p>
+                    Ideas, recetas y momentos para hacer<br>
+                    de cada día algo especial.
+                </p>
+
+                <!-- Se conserva la imagen original en el HTML.
+                     El CSS la oculta porque los granos se colocan
+                     desde el pseudo-elemento del footer. -->
+                <img src="img/Footer-cafe.png"
+                    class="footer-coffee-beans" alt="" aria-hidden="true">
+            </div>
+
+
+            <div class="footer-column">
+                <h2>NAVEGACIÓN</h2>
+                <a href="index.html">Inicio</a>
+                <a href="recetas.html">Explorar recetas</a>
+                <a href="misiones_y_recompensas.html">Misiones</a>
+                <a href="guardados.html">Guardados</a>
+                <a href="productos.html">Productos</a>
+            </div>
+
+
+            <div class="footer-column">
+                <h2>AYUDA</h2>
+                <a href="#">FAQ</a>
+                <a href="#">Centro de ayuda</a>
+                <a href="#">Contacto / Soporte</a>
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Aviso de privacidad</a>
+            </div>
+
+
+            <div class="footer-column">
+                <h2>SOBRE NOSOTROS</h2>
+                <a href="#">Sobre NESCAFÉ</a>
+                <a href="#">Sustentabilidad</a>
+                <a href="#">Nuestra historia</a>
+                <a href="#">Trabaja con nosotros</a>
+            </div>
+
+
+            <div class="footer-bottom">
+                <p>© 2026 NESCAFÉ. Todos los derechos reservados.</p>
+                <span>México (MX)</span>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

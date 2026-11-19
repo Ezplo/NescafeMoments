@@ -1,0 +1,514 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Explorar recetas | NESCAFÉ Moments</title>
+</head>
+<body>
+
+    <!-- =====================================
+         HERO Y HEADER
+    ====================================== -->
+
+    <section class="hero recipes-hero">
+
+        <!-- IMAGEN DE FONDO DEL HEADER -->
+        <img
+            src="img/headers/recetas.png"
+            alt=""
+            class="hero-background"
+            aria-hidden="true"
+        >
+
+        <header class="site-header">
+
+            <div class="header-top container">
+
+                <a href="index.html" class="brand">
+                    <img src="img/logo-blanco.png" width="150" alt="Logo Nescafé">
+                </a>
+
+                <form class="search-form" role="search">
+                    <label for="site-search" class="sr-only">Buscar</label>
+
+                    <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="10.8" cy="10.8" r="6.4"></circle>
+                        <path d="m16 16 4.2 4.2"></path>
+                    </svg>
+
+                    <input
+                        id="site-search"
+                        type="search"
+                        placeholder="Buscar recetas, ingredientes..."
+                    >
+
+                    <button type="reset" class="search-clear"
+                        aria-label="Limpiar búsqueda"></button>
+                </form>
+
+                <div class="header-actions">
+
+                    <button class="icon-button" type="button" aria-label="Notificaciones">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+                            <path d="M10 21h4"></path>
+                        </svg>
+                    </button>
+
+                    <a href="perfil.html" class="user-menu">
+                        <span class="user-avatar">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4"></circle>
+                                <path d="M4 21c.7-4.2 3.5-6.3 8-6.3s7.3 2.1 8 6.3"></path>
+                            </svg>
+                        </span>
+
+                        <span class="user-name">Nombre</span>
+                        <span class="chevron" aria-hidden="true"></span>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- NAVBAR -->
+            <nav class="main-nav container" aria-label="Navegación principal">
+
+                <a href="index.html" class="nav-link">Inicio</a>
+
+                <a href="recetas.html" class="nav-link is-active">Recetas</a>
+
+                <a href="misiones_y_recompensas.html" class="nav-link">
+                    Misiones y Recompensas
+                </a>
+
+                <a href="guardados.html" class="nav-link">Guardados</a>
+
+                <a href="productos.html" class="nav-link">Productos</a>
+
+            </nav>
+        </header>
+
+        <!-- TÍTULO DEL HEADER -->
+        <div class="recipes-hero-title">
+            <h1>Explora recetas de café</h1>
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         CONTENIDO PRINCIPAL
+    ====================================== -->
+
+    <main class="recipes-page container">
+
+        <!-- BUSCADOR Y FILTROS -->
+        <section class="recipe-search-area">
+
+            <form class="recipe-search" role="search">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="10.8" cy="10.8" r="6.4"></circle>
+                    <path d="m16 16 4.2 4.2"></path>
+                </svg>
+
+                <input
+                    type="search"
+                    placeholder="Buscar recetas, ingredientes..."
+                    aria-label="Buscar recetas"
+                >
+
+                <button type="reset" aria-label="Limpiar búsqueda"></button>
+
+            </form>
+
+            <button class="filter-button" type="button">
+
+                <span>Filtros</span>
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 4h16l-6.5 8v7l-3 2v-9L4 4z"></path>
+                </svg>
+
+            </button>
+
+        </section>
+
+
+        <!-- =====================================
+             CATEGORÍAS
+        ====================================== -->
+
+        <section class="recipe-categories" aria-label="Categorías de recetas">
+
+            <a href="#" class="recipe-category">
+                <div class="category-image">
+                    <img src="img/Iconos NAVBAR/Recetas-rapidas.png" alt="">
+                </div>
+                <h2>Rápidas</h2>
+            </a>
+
+            <a href="#" class="recipe-category">
+                <div class="category-image">
+                    <img src="img/Iconos NAVBAR/recetas-frias.png" alt="">
+                </div>
+                <h2>Frías</h2>
+            </a>
+
+            <a href="#" class="recipe-category">
+                <div class="category-image">
+                    <img src="img/Iconos NAVBAR/recetas-calientes.png" alt="">
+                </div>
+                <h2>Calientes</h2>
+            </a>
+
+            <a href="#" class="recipe-category">
+                <div class="category-image">
+                    <img src="img/Iconos NAVBAR/recetas-dulces.png" alt="">
+                </div>
+                <h2>Dulces</h2>
+            </a>
+
+            <a href="#" class="recipe-category">
+                <div class="category-image">
+                    <img src="img/Iconos NAVBAR/recetas-temporada.png" alt="">
+                </div>
+                <h2>Temporada</h2>
+            </a>
+
+            <a href="#" class="recipe-category">
+                <div class="category-image">
+                    <img src="img/Iconos NAVBAR/recetas-tendencia.png" alt="">
+                </div>
+                <h2>Tendencia</h2>
+            </a>
+
+        </section>
+
+
+        <!-- =====================================
+             RECETAS RECOMENDADAS
+        ====================================== -->
+
+        <section class="panel recipes-panel">
+
+            <div class="section-heading">
+                <h2>Recomendadas para ti</h2>
+                <a href="#" class="text-link heading-link">Ver todas →</a>
+            </div>
+
+            <div class="recipe-grid">
+
+                <article class="content-card recipe-card">
+                    <div class="card-image-wrap">
+                        <img src="img/recetas/cafe-frio-de-vainilla.png" alt="Café frío con vainilla">
+                        <button class="bookmark-button is-saved" type="button" aria-label="Guardar receta">
+                            <svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h3>Café frío con Vainilla</h3>
+                        <p class="card-meta"><span class="meta-icon">☆</span> 5.0</p>
+                        <p class="card-meta"><span class="meta-icon">◷</span> 6 min</p>
+                        <a href="#" class="text-link card-link">Ver receta →</a>
+                    </div>
+                </article>
+
+                <article class="content-card recipe-card">
+                    <div class="card-image-wrap">
+                        <img src="img/recetas/dirty-latte.png" alt="Dirty Chai Latte">
+                        <button class="bookmark-button" type="button" aria-label="Guardar receta">
+                            <svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h3>Dirty Chai Latte</h3>
+                        <p class="card-meta"><span class="meta-icon">☆</span> 4.5</p>
+                        <p class="card-meta"><span class="meta-icon">◷</span> 5 min</p>
+                        <a href="#" class="text-link card-link">Ver receta →</a>
+                    </div>
+                </article>
+
+                <article class="content-card recipe-card">
+                    <div class="card-image-wrap">
+                        <img src="img/recetas/macciato-chocolate-blanco.png" alt="Macchiato de chocolate blanco">
+                        <button class="bookmark-button" type="button" aria-label="Guardar receta">
+                            <svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h3>Macchiato de chocolate blanco</h3>
+                        <p class="card-meta"><span class="meta-icon">☆</span> 4.9</p>
+                        <p class="card-meta"><span class="meta-icon">◷</span> 10 min</p>
+                        <a href="#" class="text-link card-link">Ver receta →</a>
+                    </div>
+                </article>
+
+                <article class="content-card recipe-card">
+                    <div class="card-image-wrap">
+                        <img src="img/recetas/latte-caffe-matcha.png" alt="Latte de café y matcha">
+                        <button class="bookmark-button" type="button" aria-label="Guardar receta">
+                            <svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h3>Latte de café y matcha</h3>
+                        <p class="card-meta"><span class="meta-icon">☆</span> 5.0</p>
+                        <p class="card-meta"><span class="meta-icon">◷</span> 10 min</p>
+                        <a href="#" class="text-link card-link">Ver receta →</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================
+             RECETAS POPULARES
+        ====================================== -->
+
+        <section class="panel recipes-panel">
+
+            <div class="section-heading">
+                <h2>Recetas más populares</h2>
+                <a href="#" class="text-link heading-link">Ver todas →</a>
+            </div>
+
+            <div class="recipe-grid">
+
+                <article class="content-card recipe-card">
+                    <div class="card-image-wrap">
+                        <img src="img/recetas/frappe-con-miel.png" alt="Café frappé con miel">
+                        <button class="bookmark-button is-saved" type="button" aria-label="Guardar receta">
+                            <svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h3>Café frappé con miel</h3>
+                        <p class="card-meta"><span class="meta-icon">☆</span> 4.2</p>
+                        <p class="card-meta"><span class="meta-icon">◷</span> 3 min</p>
+                        <a href="#" class="text-link card-link">Ver receta →</a>
+                    </div>
+                </article>
+
+                <article class="content-card recipe-card">
+                    <div class="card-image-wrap">
+                        <img src="img/recetas/cafe-moka.png" alt="Café moka">
+                        <button class="bookmark-button" type="button" aria-label="Guardar receta">
+                            <svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h3>Café moka</h3>
+                        <p class="card-meta"><span class="meta-icon">☆</span> 4.6</p>
+                        <p class="card-meta"><span class="meta-icon">◷</span> 5 min</p>
+                        <a href="#" class="text-link card-link">Ver receta →</a>
+                    </div>
+                </article>
+
+                <article class="content-card recipe-card">
+                    <div class="card-image-wrap">
+                        <img src="img/recetas/Spiced iced caramel latte.png" alt="Spiced iced caramel latte">
+                        <button class="bookmark-button" type="button" aria-label="Guardar receta">
+                            <svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h3>Spiced iced caramel latte</h3>
+                        <p class="card-meta"><span class="meta-icon">☆</span> 4.8</p>
+                        <p class="card-meta"><span class="meta-icon">◷</span> 5 min</p>
+                        <a href="#" class="text-link card-link">Ver receta →</a>
+                    </div>
+                </article>
+
+                <article class="content-card recipe-card">
+                    <div class="card-image-wrap">
+                        <img src="img/recetas/iced-vainilla.png" alt="Iced Vanilla white moka-puccino">
+                        <button class="bookmark-button is-saved" type="button" aria-label="Guardar receta">
+                            <svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h3>Iced Vanilla white moka-puccino</h3>
+                        <p class="card-meta"><span class="meta-icon">☆</span> 4.8</p>
+                        <p class="card-meta"><span class="meta-icon">◷</span> 15 min</p>
+                        <a href="#" class="text-link card-link">Ver receta →</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================
+             CREADAS POR LA COMUNIDAD
+        ====================================== -->
+
+        <section class="panel recipes-panel">
+
+            <div class="section-heading">
+                <h2>Creadas por la comunidad</h2>
+                <a href="#" class="text-link heading-link">Ver todas →</a>
+            </div>
+
+            <div class="recipe-grid">
+
+                <article class="content-card recipe-card">
+                    <div class="card-image-wrap">
+                        <img src="img/recetas/Hazelnut shaken Latte.png" alt="Hazelnut shaken Latte">
+                        <button class="bookmark-button is-saved" type="button" aria-label="Guardar receta">
+                            <svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h3>Hazelnut shaken Latte</h3>
+                        <p class="card-meta"><span class="meta-icon">☆</span> 5.0</p>
+                        <p class="card-meta"><span class="meta-icon">◷</span> 15 min</p>
+                        <a href="#" class="text-link card-link">Ver receta →</a>
+                    </div>
+                </article>
+
+                <article class="content-card recipe-card">
+                    <div class="card-image-wrap">
+                        <img src="img/recetas/blueberry-vainilla.png" alt="Blueberry Vanilla Smoothie">
+                        <button class="bookmark-button" type="button" aria-label="Guardar receta">
+                            <svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h3>Blueberry Vanilla Smoothie</h3>
+                        <p class="card-meta"><span class="meta-icon">☆</span> 4.0</p>
+                        <p class="card-meta"><span class="meta-icon">◷</span> 15 min</p>
+                        <a href="#" class="text-link card-link">Ver receta →</a>
+                    </div>
+                </article>
+
+                <article class="content-card recipe-card">
+                    <div class="card-image-wrap">
+                        <img src="img/recetas/dalgona-coco.png" alt="Dalgona coco latte">
+                        <button class="bookmark-button is-saved" type="button" aria-label="Guardar receta">
+                            <svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h3>Dalgona coco latte</h3>
+                        <p class="card-meta"><span class="meta-icon">☆</span> 4.2</p>
+                        <p class="card-meta"><span class="meta-icon">◷</span> 15 min</p>
+                        <a href="#" class="text-link card-link">Ver receta →</a>
+                    </div>
+                </article>
+
+                <article class="content-card recipe-card">
+                    <div class="card-image-wrap">
+                        <img src="img/recetas/cafe-vietnamita.png" alt="Café vietnamita">
+                        <button class="bookmark-button" type="button" aria-label="Guardar receta">
+                            <svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h3>Café vietnamita</h3>
+                        <p class="card-meta"><span class="meta-icon">☆</span> 5.0</p>
+                        <p class="card-meta"><span class="meta-icon">◷</span> 3 min</p>
+                        <a href="#" class="text-link card-link">Ver receta →</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================
+             BANNER CREAR RECETA
+        ====================================== -->
+
+        <section class="create-recipe-banner">
+
+            <!-- IMAGEN DE FONDO DEL BANNER -->
+            <img
+                src="img/receta-fav.png"
+                alt=""
+                aria-hidden="true"
+            >
+
+            <div class="create-recipe-content">
+                <h2>¿Tienes una receta favorita?</h2>
+
+                <p>
+                    Compártela con la comunidad y sé<br class="desktop-break">
+                    parte de algo especial.
+                </p>
+
+                <a href="#" class="create-recipe-button">
+                    Crear receta →
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-inner container">
+
+            <div class="footer-brand-column">
+                <a href="index.html" class="brand footer-brand">
+                    <img src="img/logo-blanco.png" width="150" alt="Logo Nescafé">
+                </a>
+
+                <p>
+                    Ideas, recetas y momentos para hacer<br>
+                    de cada día algo especial.
+                </p>
+
+                <img src="img/Footer-cafe.png"
+                    class="footer-coffee-beans" alt="" aria-hidden="true">
+            </div>
+
+            <div class="footer-column">
+                <h2>NAVEGACIÓN</h2>
+                <a href="index.html">Inicio</a>
+                <a href="recetas.html">Explorar recetas</a>
+                <a href="misiones_y_recompensas.html">Misiones</a>
+                <a href="guardados.html">Guardados</a>
+                <a href="productos.html">Productos</a>
+            </div>
+
+            <div class="footer-column">
+                <h2>AYUDA</h2>
+                <a href="#">FAQ</a>
+                <a href="#">Centro de ayuda</a>
+                <a href="#">Contacto / Soporte</a>
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Aviso de privacidad</a>
+            </div>
+
+            <div class="footer-column">
+                <h2>SOBRE NOSOTROS</h2>
+                <a href="#">Sobre NESCAFÉ</a>
+                <a href="#">Sustentabilidad</a>
+                <a href="#">Nuestra historia</a>
+                <a href="#">Trabaja con nosotros</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 NESCAFÉ. Todos los derechos reservados.</p>
+                <span>México (MX)</span>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

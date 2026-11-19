@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Productos | NESCAFÉ Moments</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+   <!-- =====================================
+         HERO Y HEADER
+    ====================================== -->
+
+    <section class="hero recipes-hero">
+
+        <!-- IMAGEN DE FONDO DEL HEADER -->
+        <img
+            src="img/headers/productos.png"
+            alt=""
+            class="hero-background"
+            aria-hidden="true"
+        >
+
+        <header class="site-header">
+
+            <div class="header-top container">
+
+                <a href="index.html" class="brand">
+                    <img src="img/logo-blanco.png" width="150" alt="Logo Nescafé">
+                </a>
+
+                <form class="search-form" role="search">
+                    <label for="site-search" class="sr-only">Buscar</label>
+
+                    <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="10.8" cy="10.8" r="6.4"></circle>
+                        <path d="m16 16 4.2 4.2"></path>
+                    </svg>
+
+                    <input
+                        id="site-search"
+                        type="search"
+                        placeholder="Buscar nuestros productos"
+                    >
+
+                    <button type="reset" class="search-clear"
+                        aria-label="Limpiar búsqueda"></button>
+                </form>
+
+                <div class="header-actions">
+
+                    <button class="icon-button" type="button" aria-label="Notificaciones">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+                            <path d="M10 21h4"></path>
+                        </svg>
+                    </button>
+
+                    <a href="perfil.html" class="user-menu">
+                        <span class="user-avatar">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4"></circle>
+                                <path d="M4 21c.7-4.2 3.5-6.3 8-6.3s7.3 2.1 8 6.3"></path>
+                            </svg>
+                        </span>
+
+                        <span class="user-name">Nombre</span>
+                        <span class="chevron" aria-hidden="true"></span>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- NAVBAR -->
+            <nav class="main-nav container" aria-label="Navegación principal">
+
+                <a href="index.html" class="nav-link">Inicio</a>
+
+                <a href="recetas.html" class="nav-link">Recetas</a>
+
+                <a href="misiones_y_recompensas.html" class="nav-link">
+                    Misiones y Recompensas
+                </a>
+
+                <a href="guardados.html" class="nav-link">Guardados</a>
+
+                <a href="productos.html" class="nav-link is-active">Productos</a>
+
+            </nav>
+        </header>
+
+        <!-- TÍTULO DEL HEADER -->
+        <div class="recipes-hero-title">
+            <h1>Descubre nuestro cafés</h1>
+        </div>
+
+    </section>
+
+    <!-- ======================================
+         CONTENIDO: PRODUCTOS
+    ======================================= -->
+
+    <main class="products-page">
+
+        <div class="products-container">
+
+            <!-- BUSCADOR Y FILTROS -->
+            <section class="products-controls">
+
+                <form class="products-search" role="search">
+
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <path d="m16 16 5 5"></path>
+                    </svg>
+
+                    <input
+                        type="search"
+                        placeholder="Buscar recetas, ingredientes..."
+                        aria-label="Buscar productos"
+                    >
+
+                </form>
+
+                <button class="products-filter" type="button">
+
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M4 7h16"></path>
+                        <path d="M7 12h10"></path>
+                        <path d="M10 17h4"></path>
+                    </svg>
+
+                    <span>Filtros</span>
+
+                </button>
+
+            </section>
+
+
+            <!-- CATEGORÍAS -->
+            <section class="products-categories" aria-label="Categorías de productos">
+
+                <button type="button" class="products-category is-active">
+                    <span class="category-icon">
+                        <img src="img/Iconos NAVBAR/productos-todos.png" alt="">
+                    </span>
+                    <span class="category-name">Todos</span>
+                </button>
+
+                <button type="button" class="products-category">
+                    <span class="category-icon">
+                        <img src="img/Iconos NAVBAR/productos-clasicos.png" alt="">
+                    </span>
+                    <span class="category-name">Clásicos</span>
+                </button>
+
+                <button type="button" class="products-category">
+                    <span class="category-icon">
+                        <img src="img/Iconos NAVBAR/productos-cafeteria.png" alt="">
+                    </span>
+                    <span class="category-name">Cafetería</span>
+                </button>
+
+                <button type="button" class="products-category">
+                    <span class="category-icon">
+                        <img src="img/Iconos NAVBAR/productos-sabores.png" alt="">
+                    </span>
+                    <span class="category-name">Sabores</span>
+                </button>
+
+                <button type="button" class="products-category">
+                    <span class="category-icon">
+                        <img src="img/Iconos NAVBAR/productos-instantenos.png" alt="">
+                    </span>
+                    <span class="category-name">Instantáneos</span>
+                </button>
+
+                <button type="button" class="products-category">
+                    <span class="category-icon">
+                        <img src="img/Iconos NAVBAR/productos-alternativos.png" alt="">
+                    </span>
+                    <span class="category-name">Alternativas</span>
+                </button>
+
+            </section>
+
+
+            <!-- CATÁLOGO -->
+            <section class="products-grid" aria-label="Catálogo de cafés">
+
+                <article class="products-card">
+                    <a href="producto-detalle.html" class="products-card-image">
+                        <img src="img/productos/clasico.png" alt="NESCAFÉ Clásico">
+                    </a>
+                    <div class="products-card-info">
+                        <h2>NESCAFÉ Clásico</h2>
+                        <a href="producto-detalle.html">Ver producto <span>→</span></a>
+                    </div>
+                </article>
+
+                <article class="products-card">
+                    <a href="producto-detalle.html" class="products-card-image">
+                        <img src="img/productos/vainilla.png" alt="NESCAFÉ Vainilla">
+                    </a>
+                    <div class="products-card-info">
+                        <h2>NESCAFÉ Vainilla</h2>
+                        <a href="producto-detalle.html">Ver producto <span>→</span></a>
+                    </div>
+                </article>
+
+                <article class="products-card">
+                    <a href="producto-detalle.html" class="products-card-image">
+                        <img src="img/productos/Avellana.png" alt="NESCAFÉ Avellana">
+                    </a>
+                    <div class="products-card-info">
+                        <h2>NESCAFÉ Avellana</h2>
+                        <a href="producto-detalle.html">Ver producto <span>→</span></a>
+                    </div>
+                </article>
+
+                <article class="products-card">
+                    <a href="producto-detalle.html" class="products-card-image">
+                        <img src="img/productos/ice-roast.png" alt="NESCAFÉ Gold Expresso">
+                    </a>
+                    <div class="products-card-info">
+                        <h2>NESCAFÉ Gold Expresso</h2>
+                        <a href="producto-detalle.html">Ver producto <span>→</span></a>
+                    </div>
+                </article>
+
+                <article class="products-card">
+                    <a href="producto-detalle.html" class="products-card-image">
+                        <img src="img/productos/olla.png" alt="NESCAFÉ Cafe de Olla">
+                    </a>
+                    <div class="products-card-info">
+                        <h2>NESCAFÉ Cafe de Olla</h2>
+                        <a href="producto-detalle.html">Ver producto <span>→</span></a>
+                    </div>
+                </article>
+
+                <article class="products-card">
+                    <a href="producto-detalle.html" class="products-card-image">
+                        <img src="img/productos/brazil.png" alt="NESCAFÉ Brazil">
+                    </a>
+                    <div class="products-card-info">
+                        <h2>NESCAFÉ Brazil</h2>
+                        <a href="producto-detalle.html">Ver producto <span>→</span></a>
+                    </div>
+                </article>
+
+                <article class="products-card">
+                    <a href="producto-detalle.html" class="products-card-image">
+                        <img src="img/productos/dolca.png" alt="NESCAFÉ Dolca">
+                    </a>
+                    <div class="products-card-info">
+                        <h2>NESCAFÉ Dolca</h2>
+                        <a href="producto-detalle.html">Ver producto <span>→</span></a>
+                    </div>
+                </article>
+
+                <article class="products-card">
+                    <a href="producto-detalle.html" class="products-card-image">
+                        <img src="img/productos/decaf.png" alt="NESCAFÉ Decaf">
+                    </a>
+                    <div class="products-card-info">
+                        <h2>NESCAFÉ Decaf</h2>
+                        <a href="producto-detalle.html">Ver producto <span>→</span></a>
+                    </div>
+                </article>
+
+                <article class="products-card">
+                    <a href="producto-detalle.html" class="products-card-image">
+                        <img src="img/productos/ice.png" alt="NESCAFÉ Ice">
+                    </a>
+                    <div class="products-card-info">
+                        <h2>NESCAFÉ Ice</h2>
+                        <a href="producto-detalle.html">Ver producto <span>→</span></a>
+                    </div>
+                </article>
+
+                <article class="products-card">
+                    <a href="producto-detalle.html" class="products-card-image">
+                        <img src="img/productos/black.png" alt="NESCAFÉ Black">
+                    </a>
+                    <div class="products-card-info">
+                        <h2>NESCAFÉ Black</h2>
+                        <a href="producto-detalle.html">Ver producto <span>→</span></a>
+                    </div>
+                </article>
+
+                <article class="products-card">
+                    <a href="producto-detalle.html" class="products-card-image">
+                        <img src="img/productos/Colombia.png" alt="NESCAFÉ Colombia">
+                    </a>
+                    <div class="products-card-info">
+                        <h2>NESCAFÉ Colombia</h2>
+                        <a href="producto-detalle.html">Ver producto <span>→</span></a>
+                    </div>
+                </article>
+
+                <article class="products-card">
+                    <a href="producto-detalle.html" class="products-card-image">
+                        <img src="img/productos/moca.png" alt="NESCAFÉ Moca">
+                    </a>
+                    <div class="products-card-info">
+                        <h2>NESCAFÉ Moca</h2>
+                        <a href="producto-detalle.html">Ver producto <span>→</span></a>
+                    </div>
+                </article>
+
+                <article class="products-card">
+                    <a href="producto-detalle.html" class="products-card-image">
+                        <img src="img/productos/expresso.png" alt="NESCAFÉ Expresso">
+                    </a>
+                    <div class="products-card-info">
+                        <h2>NESCAFÉ Expresso</h2>
+                        <a href="producto-detalle.html">Ver producto <span>→</span></a>
+                    </div>
+                </article>
+
+                <article class="products-card">
+                    <a href="producto-detalle.html" class="products-card-image">
+                        <img src="img/productos/gold expresso.png" alt="NESCAFÉ Gold Expresso">
+                    </a>
+                    <div class="products-card-info">
+                        <h2>NESCAFÉ Gold Expresso</h2>
+                        <a href="producto-detalle.html">Ver producto <span>→</span></a>
+                    </div>
+                </article>
+
+                <article class="products-card">
+                    <a href="producto-detalle.html" class="products-card-image">
+                        <img src="img/productos/gold expresso caramelo.png" alt="NESCAFÉ Gold Expresso Caramelo">
+                    </a>
+                    <div class="products-card-info">
+                        <h2>NESCAFÉ Gold Expresso Caramelo</h2>
+                        <a href="producto-detalle.html">Ver producto <span>→</span></a>
+                    </div>
+                </article>
+
+                <article class="products-card">
+                    <a href="producto-detalle.html" class="products-card-image">
+                        <img src="img/productos/gold expresso vainilla.png" alt="NESCAFÉ Gold Expresso Vainilla">
+                    </a>
+                    <div class="products-card-info">
+                        <h2>NESCAFÉ Gold Expresso Vainilla</h2>
+                        <a href="producto-detalle.html">Ver producto <span>→</span></a>
+                    </div>
+                </article>
+
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+     <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-inner container">
+
+            <div class="footer-brand-column">
+                <a href="index.html" class="brand footer-brand">
+                    <img src="img/logo-blanco.png" width="150" alt="Logo Nescafé">
+                </a>
+
+                <p>
+                    Ideas, recetas y momentos para hacer<br>
+                    de cada día algo especial.
+                </p>
+
+                <img src="img/Footer-cafe.png"
+                    class="footer-coffee-beans" alt="" aria-hidden="true">
+            </div>
+
+            <div class="footer-column">
+                <h2>NAVEGACIÓN</h2>
+                <a href="index.html">Inicio</a>
+                <a href="recetas.html">Explorar recetas</a>
+                <a href="misiones_y_recompensas.html">Misiones</a>
+                <a href="guardados.html">Guardados</a>
+                <a href="productos.html">Productos</a>
+            </div>
+
+            <div class="footer-column">
+                <h2>AYUDA</h2>
+                <a href="#">FAQ</a>
+                <a href="#">Centro de ayuda</a>
+                <a href="#">Contacto / Soporte</a>
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Aviso de privacidad</a>
+            </div>
+
+            <div class="footer-column">
+                <h2>SOBRE NOSOTROS</h2>
+                <a href="#">Sobre NESCAFÉ</a>
+                <a href="#">Sustentabilidad</a>
+                <a href="#">Nuestra historia</a>
+                <a href="#">Trabaja con nosotros</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 NESCAFÉ. Todos los derechos reservados.</p>
+                <span>México (MX)</span>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
