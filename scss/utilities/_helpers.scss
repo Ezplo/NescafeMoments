@@ -1,0 +1,23 @@
+// Clases auxiliares opcionales. Se pueden aplicar desde el HTML cuando hagan falta.
+.u-flex-center { @include flex-center; }
+.u-flex-column-center { @include flex-center(column); }
+.u-flex-between { @include flex-between; }
+.u-container { @include container; }
+.u-truncate { @include truncate; }
+.u-visually-hidden { @include visually-hidden; }
+.u-grid-auto-fit { @include grid-auto-fit; }
+
+// Ejemplo de breakpoint progresivo disponible para componentes nuevos.
+.u-grid-auto-fit {
+  @include respond-from($breakpoint-tablet) {
+    gap: 24px;
+  }
+}
+
+// Foco visible para los controles principales al navegar con teclado.
+.button,
+.icon-button,
+.bookmark-button,
+.nav-link {
+  @include focus-visible;
+}

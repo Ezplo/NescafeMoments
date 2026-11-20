@@ -1,0 +1,196 @@
+/* PANELES GENERALES */
+
+.panel {
+    padding: 20px 22px;
+
+    border: 1px solid rgba(201,199,192,0.55);
+    border-radius: 13px;
+
+    background: var(--background);
+
+    box-shadow: var(--shadow);
+}
+
+.section-heading {
+    @include flex-between;
+    gap: 16px;
+
+    margin-bottom: 16px;
+}
+
+.section-heading h2,
+.dashboard-panel > h2 {
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 1.25;
+
+    font-weight: 800;
+}
+
+.text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    color: var(--primary);
+
+    font-size: 15px;
+    font-weight: 700;
+
+    @include transition(opacity, 150ms, ease);
+}
+
+.text-link:hover {
+    opacity: 0.72;
+}
+
+.heading-link {
+    color: var(--text);
+    white-space: nowrap;
+}
+
+
+/* ==========================================
+   RECETAS
+========================================== */
+
+.recipes-panel {
+    margin-bottom: 22px;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    gap: 22px;
+}
+
+.content-card {
+    min-width: 0;
+    overflow: hidden;
+
+    border: 1px solid rgba(201,199,192,0.7);
+    border-radius: 6px;
+
+    background: var(--background);
+
+    box-shadow: 0 2px 3px rgba(0,0,0,0.19);
+}
+
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* FOTOGRAFÍAS */
+
+.card-image-wrap {
+    position: relative;
+
+    aspect-ratio: 1.38 / 1;
+
+    overflow: hidden;
+
+    background: #dedbd3;
+}
+
+.card-image-wrap img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* BOTÓN GUARDAR */
+
+.bookmark-button {
+    position: absolute;
+
+    top: 7px;
+    right: 7px;
+
+    width: 24px;
+    height: 27px;
+
+    display: grid;
+    place-items: center;
+
+    padding: 2px;
+
+    border: 0;
+
+    background: transparent;
+    color: var(--white);
+
+    cursor: pointer;
+
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,0.5));
+}
+
+.bookmark-button svg {
+    width: 19px;
+    height: 22px;
+
+    fill: transparent;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linejoin: round;
+}
+
+.bookmark-button.is-saved {
+    color: var(--primary);
+}
+
+.bookmark-button.is-saved svg {
+    fill: currentColor;
+}
+
+
+/* INFORMACIÓN DE RECETAS */
+
+.card-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 10px 12px 13px;
+}
+
+.card-body h3,
+.product-card-body h3 {
+    min-height: 36px;
+
+    margin: 0 0 5px;
+
+    font-size: 14px;
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+.card-meta {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    margin: 0 0 2px;
+
+    font-size: 15px;
+    line-height: 1.25;
+}
+
+.meta-icon {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.card-link {
+    margin-top: auto;
+    padding-top: 12px;
+}
+
+
+/* ==========================================

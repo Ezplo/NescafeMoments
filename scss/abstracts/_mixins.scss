@@ -1,0 +1,81 @@
+// MIXINS GLOBALES — Nescafé Moments
+// Herramientas reutilizables para layout, accesibilidad y responsive.
+
+// Responsive clásico: aplica reglas hasta el ancho indicado.
+@mixin respond-until($breakpoint) {
+  @media (max-width: $breakpoint) { @content; }
+}
+
+// Responsive progresivo: aplica reglas desde el ancho indicado.
+@mixin respond-from($breakpoint) {
+  @media (min-width: $breakpoint) { @content; }
+}
+
+// Centrado con Flexbox.
+@mixin flex-center($direction: row, $gap: null) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: center;
+  @if $gap != null { gap: $gap; }
+}
+
+// Distribución de elementos a ambos extremos.
+@mixin flex-between($align: center) {
+  display: flex;
+  align-items: $align;
+  justify-content: space-between;
+}
+
+// Contenedor centrado con ancho máximo y gutters configurables.
+@mixin container($max-width: 1200px, $gutter: 64px) {
+  width: min($max-width, calc(100% - #{$gutter}));
+  margin-inline: auto;
+}
+
+// Transiciones consistentes y configurables.
+@mixin transition($property: all, $duration: 0.2s, $easing: ease) {
+  transition: $property $duration $easing;
+}
+
+// Indicador de foco visible para navegación con teclado.
+@mixin focus-visible($color: $color-primary, $width: 3px) {
+  &:focus-visible {
+    outline: $width solid $color;
+    outline-offset: 3px;
+  }
+}
+
+// Recorta texto de una o varias líneas.
+@mixin truncate($lines: 1) {
+  @if $lines == 1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } @else {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lines;
+    overflow: hidden;
+  }
+}
+
+// Oculta visualmente sin quitar el contenido a lectores de pantalla.
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+// Grid adaptable que crea tantas columnas como quepan.
+@mixin grid-auto-fit($min-column: 220px, $gap: 20px) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, $min-column), 1fr));
+  gap: $gap;
+}
