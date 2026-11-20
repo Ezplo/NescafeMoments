@@ -18,15 +18,15 @@
         <img
             src="img/headers/home.png"
             alt=""
-            class="hero-background"
+            class="hero-background hero__background"
             aria-hidden="true"
         >
 
-        <header class="site-header">
+        <header class="site-header header">
 
-            <div class="header-top container">
+            <div class="header-top container header__top">
 
-                <a href="index.html" class="brand">
+                <a href="index.html" class="brand header__brand">
                     <img src="img/logo-blanco.png" width="150" alt="Logo Nescafé">
                 </a>
 
@@ -47,7 +47,7 @@
                     <button type="reset" class="search-clear" aria-label="Limpiar búsqueda"></button>
                 </form>
 
-                <div class="header-actions">
+                <div class="header-actions header__actions">
 
                     <button class="icon-button" type="button" aria-label="Notificaciones">
                         <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -74,19 +74,19 @@
             </div>
 
             <!-- NAVEGACIÓN -->
-            <nav class="main-nav container" aria-label="Navegación principal">
-                <a href="index.html" class="nav-link is-active" aria-current="page">Inicio</a>
-                <a href="recetas.html" class="nav-link">Recetas</a>
-                <a href="misiones_y_recompensas.html" class="nav-link">Misiones y Recompensas</a>
-                <a href="guardados.html" class="nav-link">Guardados</a>
-                <a href="productos.html" class="nav-link">Productos</a>
+            <nav class="main-nav container navigation" aria-label="Navegación principal">
+                <a href="index.html" class="nav-link is-active navigation__link" aria-current="page">Inicio</a>
+                <a href="recetas.html" class="nav-link navigation__link">Recetas</a>
+                <a href="misiones_y_recompensas.html" class="nav-link navigation__link">Misiones y Recompensas</a>
+                <a href="guardados.html" class="nav-link navigation__link">Guardados</a>
+                <a href="productos.html" class="nav-link navigation__link">Productos</a>
             </nav>
 
         </header>
 
         <!-- CONTENIDO HERO -->
-        <div class="hero-content container">
-            <div class="hero-copy">
+        <div class="hero-content container hero__content">
+            <div class="hero-copy hero__copy">
 
                 <h1>
                     Descubre nuevas<br class="desktop-break">
@@ -99,7 +99,7 @@
                     encuentra momentos que hagan tu día mejor
                 </p>
 
-                <div class="hero-buttons">
+                <div class="hero-buttons hero__actions">
                     <a href="recetas.html" class="button button-primary">
                         Explorar recetas
                     </a>
@@ -116,23 +116,23 @@
 
 
     <!-- CONTENIDO PRINCIPAL -->
-    <main class="page-content container">
+    <main class="page-content container page__content">
 
         <!-- RECETAS -->
         <section class="panel recipes-panel">
 
-            <div class="section-heading">
+            <div class="section-heading section-heading__content">
                 <h2>Recetas para este momento</h2>
                 <a href="recetas.html" class="text-link heading-link">
                     Ver todas →
                 </a>
             </div>
 
-            <div class="recipe-grid">
+            <div class="recipe-grid recipe-grid__items">
 
                 <!-- RECETA 1 -->
                 <article class="content-card recipe-card">
-                    <div class="card-image-wrap">
+                    <div class="card-image-wrap content-card__media">
                         <img src="img/recetas/cafe-frio-de-vainilla.png"
                             alt="Café frío con vainilla y crema batida">
 
@@ -144,7 +144,7 @@
                         </button>
                     </div>
 
-                    <div class="card-body">
+                    <div class="card-body content-card__body">
                         <h3>Café frío con Vainilla</h3>
                         <p class="card-meta"><span class="meta-icon">☆</span> 5.0</p>
                         <p class="card-meta"><span class="meta-icon">◷</span> 6 min</p>
@@ -154,7 +154,7 @@
 
                 <!-- RECETA 2 -->
                 <article class="content-card recipe-card">
-                    <div class="card-image-wrap">
+                    <div class="card-image-wrap content-card__media">
                         <img src="img/recetas/dirty-latte.png"
                             alt="Dirty chai latte en una taza de vidrio">
 
@@ -166,7 +166,7 @@
                         </button>
                     </div>
 
-                    <div class="card-body">
+                    <div class="card-body content-card__body">
                         <h3>Dirty Chai Latte</h3>
                         <p class="card-meta"><span class="meta-icon">☆</span> 4.5</p>
                         <p class="card-meta"><span class="meta-icon">◷</span> 5 min</p>
@@ -176,7 +176,7 @@
 
                 <!-- RECETA 3 -->
                 <article class="content-card recipe-card">
-                    <div class="card-image-wrap">
+                    <div class="card-image-wrap content-card__media">
                         <img src="img/recetas/macciato-chocolate-blanco.png"
                             alt="Macchiato de chocolate blanco">
 
@@ -188,7 +188,7 @@
                         </button>
                     </div>
 
-                    <div class="card-body">
+                    <div class="card-body content-card__body">
                         <h3>Macchiato de<br> chocolate blanco</h3>
                         <p class="card-meta"><span class="meta-icon">☆</span> 4.9</p>
                         <p class="card-meta"><span class="meta-icon">◷</span> 10 min</p>
@@ -198,7 +198,7 @@
 
                 <!-- RECETA 4 -->
                 <article class="content-card recipe-card">
-                    <div class="card-image-wrap">
+                    <div class="card-image-wrap content-card__media">
                         <img src="img/recetas/latte-caffe-matcha.png"
                             alt="Latte de café y matcha">
 
@@ -210,7 +210,7 @@
                         </button>
                     </div>
 
-                    <div class="card-body">
+                    <div class="card-body content-card__body">
                         <h3>Latte de café y<br> matcha</h3>
                         <p class="card-meta"><span class="meta-icon">☆</span> 5.0</p>
                         <p class="card-meta"><span class="meta-icon">◷</span> 10 min</p>
@@ -328,12 +328,12 @@
         <!-- PRODUCTOS -->
         <section class="panel products-panel">
 
-            <div class="section-heading">
+            <div class="section-heading section-heading__content">
                 <h2>Conoce nuestros productos</h2>
                 <a href="productos.html" class="text-link heading-link">Ver todas →</a>
             </div>
 
-            <div class="product-grid">
+            <div class="product-grid product-grid__items">
 
                 <article class="content-card product-card">
                     <div class="product-image-wrap">
@@ -386,12 +386,12 @@
 
 
     <!-- FOOTER -->
-    <footer class="site-footer">
+    <footer class="site-footer footer">
 
-        <div class="footer-inner container">
+        <div class="footer-inner container footer__inner">
 
             <div class="footer-brand-column">
-                <a href="index.html" class="brand footer-brand">
+                <a href="index.html" class="brand footer-brand header__brand">
                     <img src="img/logo-blanco.png" width="150" alt="Logo Nescafé">
                 </a>
 

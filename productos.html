@@ -26,15 +26,15 @@
         <img
             src="img/headers/productos.png"
             alt=""
-            class="hero-background"
+            class="hero-background hero__background"
             aria-hidden="true"
         >
 
-        <header class="site-header">
+        <header class="site-header header">
 
-            <div class="header-top container">
+            <div class="header-top container header__top">
 
-                <a href="index.html" class="brand">
+                <a href="index.html" class="brand header__brand">
                     <img src="img/logo-blanco.png" width="150" alt="Logo Nescafé">
                 </a>
 
@@ -56,7 +56,7 @@
                         aria-label="Limpiar búsqueda"></button>
                 </form>
 
-                <div class="header-actions">
+                <div class="header-actions header__actions">
 
                     <button class="icon-button" type="button" aria-label="Notificaciones">
                         <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -81,19 +81,19 @@
             </div>
 
             <!-- NAVBAR -->
-            <nav class="main-nav container" aria-label="Navegación principal">
+            <nav class="main-nav container navigation" aria-label="Navegación principal">
 
-                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="index.html" class="nav-link navigation__link">Inicio</a>
 
-                <a href="recetas.html" class="nav-link">Recetas</a>
+                <a href="recetas.html" class="nav-link navigation__link">Recetas</a>
 
-                <a href="misiones_y_recompensas.html" class="nav-link">
+                <a href="misiones_y_recompensas.html" class="nav-link navigation__link">
                     Misiones y Recompensas
                 </a>
 
-                <a href="guardados.html" class="nav-link">Guardados</a>
+                <a href="guardados.html" class="nav-link navigation__link">Guardados</a>
 
-                <a href="productos.html" class="nav-link is-active">Productos</a>
+                <a href="productos.html" class="nav-link is-active navigation__link">Productos</a>
 
             </nav>
         </header>
@@ -150,44 +150,32 @@
             <section class="products-categories" aria-label="Categorías de productos">
 
                 <button type="button" class="products-category is-active">
-                    <span class="category-icon">
-                        <img src="img/Iconos NAVBAR/productos-todos.png" alt="">
-                    </span>
+                    <span class="category-icon"><svg class="category-svg" viewBox="0 0 48 48" aria-hidden="true"><path d="M9 22h26v5a11 11 0 0 1-11 11h-4A11 11 0 0 1 9 27z"/><path d="M35 24h1.5a4.5 4.5 0 0 1 0 9H33"/><path d="M7 42h30"/><path d="M17 8c-2 2-2 4 0 6M24 8c-2 2-2 4 0 6M31 8c-2 2-2 4 0 6"/></svg></span>
                     <span class="category-name">Todos</span>
                 </button>
 
                 <button type="button" class="products-category">
-                    <span class="category-icon">
-                        <img src="img/Iconos NAVBAR/productos-clasicos.png" alt="">
-                    </span>
+                    <span class="category-icon"><svg class="category-svg" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 14h28v9a14 14 0 0 1-14 14h0A14 14 0 0 1 6 23z"/><path d="M34 17h3a5 5 0 0 1 0 10h-4"/><path d="M4 42h32"/></svg></span>
                     <span class="category-name">Clásicos</span>
                 </button>
 
                 <button type="button" class="products-category">
-                    <span class="category-icon">
-                        <img src="img/Iconos NAVBAR/productos-cafeteria.png" alt="">
-                    </span>
+                    <span class="category-icon"><svg class="category-svg" viewBox="0 0 48 48" aria-hidden="true"><path d="M13 15h22l-2.5 26h-17z"/><path d="M10 9h28v6H10z"/><path d="M14 24h20"/><path d="M16 5h16"/></svg></span>
                     <span class="category-name">Cafetería</span>
                 </button>
 
                 <button type="button" class="products-category">
-                    <span class="category-icon">
-                        <img src="img/Iconos NAVBAR/productos-sabores.png" alt="">
-                    </span>
+                    <span class="category-icon"><svg class="category-svg" viewBox="0 0 48 48" aria-hidden="true"><g transform="rotate(40 24 24)"><ellipse cx="24" cy="24" rx="12" ry="19"/><path d="M24 5c-6 7 6 12 0 19s6 12 0 19"/></g></svg></span>
                     <span class="category-name">Sabores</span>
                 </button>
 
                 <button type="button" class="products-category">
-                    <span class="category-icon">
-                        <img src="img/Iconos NAVBAR/productos-instantenos.png" alt="">
-                    </span>
+                    <span class="category-icon"><svg class="category-svg" viewBox="0 0 48 48" aria-hidden="true"><path d="M7 14h25v21a6 6 0 0 1-6 6H13a6 6 0 0 1-6-6z"/><path d="M32 19h4a4 4 0 0 1 4 4v5a4 4 0 0 1-4 4h-4"/><path d="M15 14V7h-5"/><path d="M12 21h9v8h-9z"/></svg></span>
                     <span class="category-name">Instantáneos</span>
                 </button>
 
                 <button type="button" class="products-category">
-                    <span class="category-icon">
-                        <img src="img/Iconos NAVBAR/productos-alternativos.png" alt="">
-                    </span>
+                    <span class="category-icon"><svg class="category-svg" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 41C23 23 30 11 43 7c1 14-6 28-19 34z"/><path d="M24 41C28 29 34 19 40 11"/><path d="M24 41C21 31 14 24 5 23c0 10 7 16 19 18z"/><path d="M24 41c-6-8-12-13-18-17"/></svg></span>
                     <span class="category-name">Alternativas</span>
                 </button>
 
@@ -369,12 +357,12 @@
          FOOTER
     ====================================== -->
 
-    <footer class="site-footer">
+    <footer class="site-footer footer">
 
-        <div class="footer-inner container">
+        <div class="footer-inner container footer__inner">
 
             <div class="footer-brand-column">
-                <a href="index.html" class="brand footer-brand">
+                <a href="index.html" class="brand footer-brand header__brand">
                     <img src="img/logo-blanco.png" width="150" alt="Logo Nescafé">
                 </a>
 

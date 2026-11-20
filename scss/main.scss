@@ -1,0 +1,12 @@
+// Punto de entrada Sass. El orden de imports conserva la cascada original.
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "base/base";
+@import "layout/header";
+@import "components/content";
+@import "pages/dashboard";
+@import "layout/responsive";
+@import "pages/pages";
+@import "pages/page-responsive";
+
+@import "utilities/helpers";
