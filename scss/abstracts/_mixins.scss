@@ -3,7 +3,7 @@
 
 // Responsive clásico: aplica reglas hasta el ancho indicado.
 @mixin respond-until($breakpoint) {
-  @media (max-width: $breakpoint) { @content; }
+  @include respond-until($breakpoint) { @content; }
 }
 
 // Responsive progresivo: aplica reglas desde el ancho indicado.

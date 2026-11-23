@@ -17,7 +17,7 @@
     background: linear-gradient(to bottom, rgba(0,0,0,.12) 0%, rgba(0,0,0,.12) 48%, rgba(0,0,0,.25) 72%, var(--background) 100%);
 }
 
-.missions-hero .header-top {
+.missions-hero .header__top {
     min-height: 45px;
     padding-bottom: 3px;
 }
@@ -439,7 +439,7 @@
     margin-top: 13px;
 }
 
-@media (max-width: 760px) {
+@include respond-until(760px) {
     .missions-page {
         width: min(100% - 32px, 600px);
     }
@@ -533,7 +533,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@include respond-until(480px) {
     .missions-hero-title {
         bottom: 20px;
         text-align: left;
@@ -656,7 +656,7 @@
     );
 }
 
-.profile-hero .header-top {
+.profile-hero .header__top {
     min-height: 48px;
     padding-bottom: 3px;
 }
@@ -1118,7 +1118,7 @@
     font-weight: 700;
 }
 
-@media (max-width: 900px) {
+@include respond-until(900px) {
     .profile-page {
         width: min(760px, calc(100% - 40px));
     }
@@ -1144,7 +1144,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@include respond-until(600px) {
     .profile-hero {
         height: 190px;
     }
@@ -1331,7 +1331,7 @@
     );
 }
 
-.saved-hero .header-top {
+.saved-hero .header__top {
     min-height: 45px;
     padding-bottom: 3px;
 }
@@ -1462,7 +1462,7 @@
     filter: drop-shadow(0 1px 2px rgba(0,0,0,0.35));
 }
 
-@media (max-width: 900px) {
+@include respond-until(900px) {
     .saved-page {
         width: min(760px, calc(100% - 40px));
     }
@@ -1473,7 +1473,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@include respond-until(600px) {
     .saved-hero {
         height: 205px;
     }

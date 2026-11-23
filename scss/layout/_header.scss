@@ -16,7 +16,7 @@
     -webkit-backdrop-filter: blur(11px);
 }
 
-.header-top {
+.header__top {
     min-height: 48px;
     display: flex;
     align-items: center;
@@ -100,7 +100,7 @@
 
 /* ICONOS Y PERFIL */
 
-.header-actions {
+.header__actions {
     display: flex;
     align-items: center;
     gap: 18px;
@@ -212,7 +212,7 @@
     display: none;
 }
 
-.nav-link {
+.navigation__link {
     position: relative;
 
     display: inline-flex;
@@ -230,11 +230,11 @@
     white-space: nowrap;
 }
 
-.nav-link:hover {
+.navigation__link:hover {
     color: var(--white);
 }
 
-.nav-link.is-active::after {
+.navigation__link.is-active::after {
     position: absolute;
 
     bottom: 0;
