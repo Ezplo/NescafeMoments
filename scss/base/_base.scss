@@ -4,16 +4,16 @@
 ========================================== */
 
 :root {
-    --background: #F5F3EE;
-    --primary: #FF0A0A;
-    --white: #FFFFFF;
-    --black: #000000;
-    --stroke: #C9C7C0;
-    --text: #111111;
+    --background: #{$color-background};
+    --primary: #{$color-primary};
+    --white: #{$color-white};
+    --black: #{$color-black};
+    --stroke: #{$color-stroke};
+    --text: #{$color-text};
     --shadow: 0 3px 7px rgba(0,0,0,0.16);
 
     /* TIPOGRAFÍA INTER */
-    --font-primary: "Inter", sans-serif;
+    --font-primary: #{$font-primary};
 
     /* PESOS TIPOGRÁFICOS */
     --font-thin: 100;
@@ -60,7 +60,7 @@ body {
     margin: 0;
     background: var(--background);
     color: var(--text);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-primary);
     font-size: 16px;
 }
 

@@ -27,7 +27,7 @@
     );
 }
 
-.recipes-hero .header-top {
+.recipes-hero .header__top {
     min-height: 45px;
     padding-bottom: 3px;
 }
@@ -488,7 +488,7 @@
    RESPONSIVE — TABLET
 ========================================== */
 
-@media (max-width: 900px) {
+@include respond-until(900px) {
 
     .recipes-hero {
         height: 165px;
@@ -530,13 +530,13 @@
    RESPONSIVE — MOBILE
 ========================================== */
 
-@media (max-width: 600px) {
+@include respond-until(600px) {
 
     .recipes-hero {
         height: 175px;
     }
 
-    .recipes-hero .header-top {
+    .recipes-hero .header__top {
         min-height: 58px;
         flex-wrap: wrap;
         gap: 10px;
@@ -694,7 +694,7 @@
    RESPONSIVE — PANTALLAS PEQUEÑAS
 ========================================== */
 
-@media (max-width: 360px) {
+@include respond-until(360px) {
 
     .recipe-search-area {
         grid-template-columns: 1fr 85px;
@@ -967,7 +967,7 @@
 
 /* Responsive */
 
-@media (max-width: 900px) {
+@include respond-until(900px) {
     .products-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
@@ -977,7 +977,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@include respond-until(600px) {
     .products-page {
         padding: 30px 0 60px;
     }
@@ -1023,13 +1023,13 @@
 
 /* RESPONSIVE */
 
-@media (max-width: 900px) {
+@include respond-until(900px) {
     .products-categories {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 
-@media (max-width: 600px) {
+@include respond-until(600px) {
     .products-categories {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 10px;
